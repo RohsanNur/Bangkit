@@ -1,0 +1,2 @@
+Tensorflow version: 2.5.0
+Numpy version: 1.19.5
