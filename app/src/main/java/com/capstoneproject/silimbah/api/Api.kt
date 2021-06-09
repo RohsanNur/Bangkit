@@ -9,7 +9,7 @@ import retrofit2.http.Query
 interface Api {
     @GET("api/limbah")
 
-    fun getSearchUsers(
+    fun getSearchCraft(
         @Query("jenis") query: String
     ) : Call<craftResponse>
 }

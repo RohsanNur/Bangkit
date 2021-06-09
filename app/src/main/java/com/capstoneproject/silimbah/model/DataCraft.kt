@@ -9,6 +9,6 @@ data class DataCraft (
         @SerializedName("image_url")
         val image_url : String,
 
-        @SerializedName("image_url")
+        @SerializedName("url")
         val url: String
 )

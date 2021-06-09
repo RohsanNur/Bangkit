@@ -13,18 +13,18 @@ import retrofit2.Response
 
 class MainViewModel: ViewModel() {
 
-    val listUsers = MutableLiveData<ArrayList<DataCraft>>()
+    val listCraft = MutableLiveData<ArrayList<DataCraft>>()
 
-    fun setSearchUser(query: String){
+    fun setSearch(query: String){
         RetrofitClient.appIntance
-            .getSearchUsers(query)
+            .getSearchCraft(query)
             .enqueue(object : Callback<craftResponse>{
                 override fun onResponse(
                     call: Call<craftResponse>,
                     response: Response<craftResponse>
                 ) {
                     if (response.isSuccessful){
-                        listUsers.postValue(response.body()?.data)
+                        listCraft.postValue(response.body()?.data)
                     }
                 }
 
@@ -35,7 +35,7 @@ class MainViewModel: ViewModel() {
             })
     }
 
-    fun getsearchUser(): LiveData<ArrayList<DataCraft>>{
-        return listUsers
+    fun getsearch(): LiveData<ArrayList<DataCraft>>{
+        return listCraft
     }
 }

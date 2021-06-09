@@ -128,10 +128,9 @@ class MainActivity : AppCompatActivity() {
             val craft = textView.text
             if (craft.isEmpty()) return@setOnClickListener
             showLoading(true)
-            viewModel.setSearchUser(craft as String)
+            viewModel.setSearch(craft as String)
 
-            viewModel.getsearchUser().observe(this,{
-                if (it!=null){
+            viewModel.getsearch().observe(this,{ if (it!=null){
                     adapter.setData(it)
                     showLoading(false)
                 }
