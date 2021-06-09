@@ -3,6 +3,9 @@ package com.capstoneproject.silimbah.model
 import com.google.gson.annotations.SerializedName
 
 data class DataCraft (
+        @SerializedName("id")
+        val id: Int,
+
         @SerializedName("title")
         val title: String,
 

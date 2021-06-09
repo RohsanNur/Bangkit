@@ -13,7 +13,7 @@ import retrofit2.Response
 
 class MainViewModel: ViewModel() {
 
-    val listCraft = MutableLiveData<ArrayList<DataCraft>>()
+    val listCraft = MutableLiveData<List<DataCraft>>()
 
     fun setSearch(query: String){
         RetrofitClient.appIntance
@@ -35,7 +35,7 @@ class MainViewModel: ViewModel() {
             })
     }
 
-    fun getsearch(): LiveData<ArrayList<DataCraft>>{
+    fun getsearch(): LiveData<List<DataCraft>>{
         return listCraft
     }
 }

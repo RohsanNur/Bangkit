@@ -4,5 +4,5 @@ import com.google.gson.annotations.SerializedName
 
 data class craftResponse (
     @field:SerializedName("data")
-    val data: ArrayList<DataCraft>
+    val data: List<DataCraft>
         )

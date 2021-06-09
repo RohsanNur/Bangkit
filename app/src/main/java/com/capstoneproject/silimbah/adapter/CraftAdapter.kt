@@ -17,7 +17,7 @@ class CraftAdapter: RecyclerView.Adapter<CraftAdapter.ViewHolder>() {
     }
 
     private var listData = ArrayList<DataCraft>()
-    fun setData(items: ArrayList<DataCraft>){
+    fun setData(items: List<DataCraft>){
         listData.clear()
         listData.addAll(items)
         notifyDataSetChanged()
