@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Si Limbah</string>
+    <string name="home">Home</string>
+    <string name="collection">Collection</string>
+    <string name="favorite">Favorite</string>
+    <string name="settings">Settings</string>
+    <string name="si_limbah">Si Limbah</string>
+    <string name="bangkit_logo">Bangkit Logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_picture">Take A Picture</string>
+    <string name="note">Make Sure The Object is In Focus and Lighting is Bright Enough to Get Best Result</string>
+    <string name="detect_now">Detect Now</string>
+    <string name="camera">Camera</string>
+    <string name="image_result">Image Result</string>
+    <string name="result_detect">Detect Result</string>
+    <string name="craft_name">Craft Name</string>
+    <string name="listCraft">List Crafts</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="no_image">No Image</string>
+    <string name="search">Search</string>
+</resources>

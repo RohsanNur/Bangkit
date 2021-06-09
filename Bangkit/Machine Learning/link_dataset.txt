@@ -1,0 +1,3 @@
+https://www.kaggle.com/asdasdasasdas/garbage-classification
+
+kaggle datasets download -d asdasdasasdas/garbage-classification
