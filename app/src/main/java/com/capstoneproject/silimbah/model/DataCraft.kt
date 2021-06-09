@@ -1,7 +1,14 @@
 package com.capstoneproject.silimbah.model
 
+import com.google.gson.annotations.SerializedName
+
 data class DataCraft (
-        var title: String,
-        var image_url : String,
-        var url: String
+        @SerializedName("title")
+        val title: String,
+
+        @SerializedName("image_url")
+        val image_url : String,
+
+        @SerializedName("image_url")
+        val url: String
 )

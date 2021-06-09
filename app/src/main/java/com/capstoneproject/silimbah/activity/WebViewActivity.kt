@@ -3,6 +3,7 @@ package com.capstoneproject.silimbah.activity
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.webkit.WebChromeClient
 import com.capstoneproject.silimbah.databinding.ActivityWebViewBinding
 import kotlinx.android.synthetic.main.activity_web_view.*
 
@@ -19,8 +20,11 @@ class WebViewActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val url = intent.getStringExtra(EXTRA_URL)
-        binding.webView.loadUrl(url)
-        binding.webView.settings.javaScriptEnabled = true
+        binding.apply {
+            webView.loadUrl(url)
+            webView.webChromeClient = WebChromeClient()
+            webView.settings.javaScriptEnabled = true
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
